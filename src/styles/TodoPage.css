@@ -10,6 +10,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+    
   }
   
   .todo-input input {
@@ -17,16 +18,18 @@
     width: 70%;
     border: 1px solid #ccc;
     border-radius: 5px;
+    border: 1px solid #353535;
   }
   
   .todo-input button {
     padding: 10px 15px;
     margin-left: 10px;
-    background-color: #007bff;
-    color: white;
+    background-color: #ffffff;
+    color: #353535;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    border: 1px solid #353535;
   }
   
   .todo-list {
@@ -40,7 +43,7 @@
     padding: 10px;
     background-color: #f9f9f9;
     margin-bottom: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #353535;
     border-radius: 5px;
   }
   
@@ -61,4 +64,13 @@
   .delete-btn:hover{
     background-color: rgb(180, 116, 116);
     color: black;
+  }
+
+  .btn-add{
+    border: 1px solid #353535;
+  }
+
+  .logo{
+    height: 200px;
+    width: 200px;
   }
