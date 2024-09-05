@@ -1,11 +1,11 @@
 // ErrorMessage.jsx
 import React from 'react';
+import './messages.css';
 
 const ErrorMessage = ({ message }) => {
   if (!message) return null; // Don't render if there's no message
-
   return (
-    <div style={{ color: 'red', marginBottom: '10px' }}>
+    <div className='message-body'>
       {message}
     </div>
   );

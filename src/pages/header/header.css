@@ -1,0 +1,41 @@
+/* Header.css */
+.header {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: flex-start; /* Align items to the left */
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  width: 100%; /* Full width */
+  box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between; /* Space between text and button */
+  width: 100%;
+}
+
+.header h2, .header p {
+  margin: 0;
+  text-align: left; /* Align text to the left */
+}
+
+.header h2 {
+  font-size: 2em;
+  color: #333;
+}
+
+.header p {
+  font-size: 1em;
+  color: #666;
+}
+
+.header .login-btn {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+}
