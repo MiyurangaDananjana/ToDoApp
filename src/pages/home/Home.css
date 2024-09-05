@@ -1,0 +1,29 @@
+.home-page {
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px 0;
+    position: relative;
+}
+
+.banner-container {
+    width: 95vw;
+    height: 600px;
+    background-color: #d8d8d8;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.banner-images {
+    display: flex;
+    transition: transform 1s ease-in-out; /* Smooth transition between images */
+}
+
+.banner-images img {
+    width: 100vw; /* Full screen width for each image */
+    height: 600px;
+    object-fit: cover;
+}

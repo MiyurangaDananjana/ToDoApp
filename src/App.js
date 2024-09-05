@@ -1,10 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import logo from './logo.svg';
 import './App.css';
 import './styles/global.css'
 import LoginPage from './pages/login/LoginPage';
 import HomePage from './pages/home/home';
-import Error from './pages/Error/ErrorPage'
+import ErrorPage from './pages/Error/ErrorPage'
 
 
 function App() {
@@ -14,7 +13,8 @@ function App() {
         <Routes>
           <Route path="/" element={<LoginPage />} />
           <Route path="/home" element={<HomePage />} />
-          <Route path="/error" element={<Error/>}/>
+          <Route path="/error" element={<ErrorPage/>}/>
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
       </Router>
 
