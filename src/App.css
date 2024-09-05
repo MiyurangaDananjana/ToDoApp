@@ -2,16 +2,7 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: #282c34;
@@ -22,7 +13,8 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  padding: 20px; /* Added padding for better spacing on smaller screens */
+  padding: 20px;
+  /* Added padding for better spacing on smaller screens */
 }
 
 .App-link {
@@ -47,14 +39,6 @@ button:hover {
   background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 /* Optimize the logo for different screen sizes */
 .logo {
@@ -70,7 +54,8 @@ button:hover {
   }
 
   .App-header {
-    font-size: calc(8px + 2vmin); /* Adjust font size for medium screens */
+    font-size: calc(8px + 2vmin);
+    /* Adjust font size for medium screens */
   }
 }
 
@@ -81,11 +66,14 @@ button:hover {
   }
 
   .App-header {
-    font-size: calc(6px + 2vmin); /* Adjust font size for smaller screens */
-    padding: 15px; /* Reduced padding for smaller screens */
+    font-size: calc(6px + 2vmin);
+    /* Adjust font size for smaller screens */
+    padding: 15px;
+    /* Reduced padding for smaller screens */
   }
 
   .App-link {
-    font-size: 14px; /* Smaller font for links */
+    font-size: 14px;
+    /* Smaller font for links */
   }
 }

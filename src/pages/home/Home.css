@@ -19,11 +19,131 @@
 
 .banner-images {
     display: flex;
-    transition: transform 1s ease-in-out; /* Smooth transition between images */
+    transition: transform 1s ease-in-out;
+    /* Smooth transition between images */
 }
 
 .banner-images img {
-    width: 100vw; /* Full screen width for each image */
+    width: 100vw;
+    /* Full screen width for each image */
     height: 600px;
     object-fit: cover;
+}
+
+.banner-welcome {
+    width: 95vw;
+    margin: 70px auto 0;
+    text-align: center;
+}
+
+.banner-welcome h4,
+.banner-welcome h2,
+.banner-welcome p {
+    margin-bottom: 10px;
+}
+
+.banner-welcome h4 {
+    font-size: 24px;
+    color: #333;
+}
+
+.banner-welcome h2 {
+    font-size: 40px;
+    color: #444;
+}
+
+.banner-welcome p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Card layout styles */
+.card-container {
+    width: 95vw;
+    margin: 70px auto 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    margin-top: 40px;
+}
+
+.card {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    width: 20%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.card-content {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.card-content h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .banner-container {
+        height: 400px;
+    }
+
+    .banner-images img {
+        height: 400px;
+    }
+
+    .banner-welcome {
+        height: auto;
+        padding: 20px;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-container {
+        height: 300px;
+    }
+
+    .banner-images img {
+        height: 300px;
+    }
+
+    .card {
+        width: 90%;
+    }
 }
