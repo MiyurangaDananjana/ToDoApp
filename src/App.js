@@ -1,13 +1,24 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
+import './styles/global.css'
 import LoginPage from './pages/login/LoginPage';
+import HomePage from './pages/home/home';
+import Error from './pages/Error/ErrorPage'
 
 
 function App() {
   return (
-   <div>
-       <LoginPage />
-   </div>
+    <div>
+      <Router>
+        <Routes>
+          <Route path="/" element={<LoginPage />} />
+          <Route path="/home" element={<HomePage />} />
+          <Route path="/error" element={<Error/>}/>
+        </Routes>
+      </Router>
+
+    </div>
   );
 }
 

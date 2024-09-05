@@ -32,6 +32,21 @@
   margin-top: 20px;
 }
 
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
