@@ -22,10 +22,14 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 20px; /* Added padding for better spacing on smaller screens */
 }
 
 .App-link {
   color: #61dafb;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
 }
 
 @keyframes App-logo-spin {
@@ -37,8 +41,36 @@
   }
 }
 
-
-.logo{
+/* Optimize the logo for different screen sizes */
+.logo {
   width: 100px;
   height: 100px;
+  margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .App-header {
+    font-size: calc(8px + 2vmin); /* Adjust font size for medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .App-header {
+    font-size: calc(6px + 2vmin); /* Adjust font size for smaller screens */
+    padding: 15px; /* Reduced padding for smaller screens */
+  }
+
+  .App-link {
+    font-size: 14px; /* Smaller font for links */
+  }
 }
