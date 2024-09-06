@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/ToDoApp/static/css/main.a139784b.css",
+    "main.js": "/ToDoApp/static/js/main.68df2bfc.js",
+    "static/js/453.e2178a37.chunk.js": "/ToDoApp/static/js/453.e2178a37.chunk.js",
+    "static/media/card-img-4.jpg": "/ToDoApp/static/media/card-img-4.07ab8688437eecbd4a29.jpg",
+    "static/media/banner_image_2.jpg": "/ToDoApp/static/media/banner_image_2.c2fc164919bb62dfb62a.jpg",
+    "static/media/banner_image_1.jpg": "/ToDoApp/static/media/banner_image_1.82a8c24c1920cc06575f.jpg",
+    "static/media/banner_image_3.jpg": "/ToDoApp/static/media/banner_image_3.1ff722ffbe717674e0dc.jpg",
+    "static/media/card-img-1.jpg": "/ToDoApp/static/media/card-img-1.e24e52ae29fdb80fea2c.jpg",
+    "static/media/about-container.jpg": "/ToDoApp/static/media/about-container.5e8057675a024749caba.jpg",
+    "static/media/card-img-3.jpg": "/ToDoApp/static/media/card-img-3.7864ebce81f3939bde9f.jpg",
+    "static/media/hottel_page.png": "/ToDoApp/static/media/hottel_page.9ebb655603f238ac640c.png",
+    "static/media/card-img-2.jpg": "/ToDoApp/static/media/card-img-2.49300df8e97892ec0675.jpg",
+    "static/media/contact-3.jpg": "/ToDoApp/static/media/contact-3.a1477051603da5dae857.jpg",
+    "index.html": "/ToDoApp/index.html",
+    "main.a139784b.css.map": "/ToDoApp/static/css/main.a139784b.css.map",
+    "main.68df2bfc.js.map": "/ToDoApp/static/js/main.68df2bfc.js.map",
+    "453.e2178a37.chunk.js.map": "/ToDoApp/static/js/453.e2178a37.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a139784b.css",
+    "static/js/main.68df2bfc.js"
+  ]
+}
