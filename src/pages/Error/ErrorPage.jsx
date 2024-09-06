@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import './Error.css'
 import img_hottel from '../../assets/hottel_page.png'
 import { useNavigate } from 'react-router-dom'; 
