@@ -4,6 +4,7 @@ import './styles/global.css'
 import HomePage from './pages/home/home';
 import ErrorPage from './pages/Error/ErrorPage'
 import AboutPage from './pages/about/about'
+import ContactUs from './pages/contact/ContactUs';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/home" element={<HomePage />} />
           <Route path="/error" element={<ErrorPage/>}/>
           <Route path='/about' element={<AboutPage/>}/>
+          <Route path='/contact' element={<ContactUs/>}/>
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </Router>

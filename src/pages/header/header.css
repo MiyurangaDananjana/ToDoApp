@@ -7,6 +7,7 @@
   border-bottom: 1px solid #ddd;
   width: 100%;
   box-sizing: border-box;
+  position: relative; /* Required for absolute positioning of the menu */
 }
 
 .header-content {
@@ -14,11 +15,12 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
 
 .header h2 {
   margin: 0;
-  font-size: 2em;
+  font-size: 1.5em; /* Adjusted for better scaling on mobile */
   color: #333;
 }
 
@@ -39,6 +41,16 @@
   color: #555;
 }
 
+/* Menu toggle button */
+.menu-toggle {
+  display: none; /* Hidden by default */
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #333;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
   .header-content {
@@ -47,6 +59,38 @@
   }
 
   .nav-links {
-    margin-top: 10px;
+    display: none; /* Hide menu by default */
+    flex-direction: column; /* Stack links vertically */
+    gap: 10px;
+    width: 100%;
+    align-items: flex-start;
+    position: absolute;
+    top: 60px; /* Adjust based on header height */
+    left: 0;
+    background-color: #f4f4f4; /* Match header background color */
+    border-top: 1px solid #ddd;
+    padding: 10px;
+  }
+
+  .nav-links.open {
+    display: flex; /* Show menu when open */
+  }
+
+  .menu-toggle {
+    display: block; /* Show menu toggle button on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .header h2 {
+    font-size: 1.2em; /* Further adjust header size on very small screens */
+  }
+
+  .nav-links {
+    gap: 8px; /* Reduce gap between links */
+  }
+
+  .nav-links a {
+    font-size: 1em; /* Maintain readability on small screens */
   }
 }
