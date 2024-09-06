@@ -1,4 +1,3 @@
-// Header.jsx
 import React from 'react';
 import './header.css'; // Ensure the correct path to your CSS file
 

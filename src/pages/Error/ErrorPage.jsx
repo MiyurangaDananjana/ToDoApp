@@ -3,7 +3,6 @@ import './Error.css'
 import img_hottel from '../../assets/hottel_page.png'
 import { useNavigate } from 'react-router-dom'; 
 
-
 const ErrorPage = () => {
 
     const navigate = useNavigate(); // Initialize useNavigate
@@ -25,8 +24,6 @@ const ErrorPage = () => {
             </div>
 
         </div>
-
-
     );
 };
 

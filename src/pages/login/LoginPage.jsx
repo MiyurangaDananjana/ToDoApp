@@ -1,9 +1,8 @@
 
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './LoginPage.css'; // Ensure this path matches where your CSS file is located
+import './LoginPage.css';
 import logo from '../../assets/lock_img.gif'
-import Home from '../home/home'
 
 const LoginPage = () => {
   const [username, setUsername] = useState('');
