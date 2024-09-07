@@ -7,11 +7,14 @@ import image_four from '../../assets/banner_images/banner_image_3.jpg'; // Chang
 import Header from '../header/header'
 import FooterPage from '../footer/footer';
 
-
 const HomePage = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const images = [image_one, image_two, image_three];
+
+    const welcomeNote = `Welcome to a chain of distinctive hotels and resorts that are benchmarked against the best in the world. 
+    Experience the warmth of true Sri Lankan hospitality as you indulge in thoughtful amenities and exclusive extravagances at Citrus Resorts and Hotels. 
+    Discover #HappinessMoments at Citrus Resorts and Hotels in Sri Lanka and take with you memories that are bound to bring you back.`;
 
     // Automatically move to the next image every 3 seconds
     useEffect(() => {
@@ -36,7 +39,7 @@ const HomePage = () => {
                 <div className="banner-welcome">
                     <h4>Your journey starts from here</h4>
                     <h2>Welcome to home</h2>
-                    <p>Welcome to a chain of distinctive hotels and resorts that are benchmarked against the best in the world. Experience the warmth of true Sri Lankan hospitality as you indulge in thoughtful amenities and exclusive extravagances at Citrus Resorts and Hotels. Discover #HappinessMoments at Citrus Resorts and Hotels in Sri Lanka and take with you memories that are bound to bring you back.</p>
+                    <p>{welcomeNote}</p>
                 </div>
 
                 {/* Card layout for 4 images */}
