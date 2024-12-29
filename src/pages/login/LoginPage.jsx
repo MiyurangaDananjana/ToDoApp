@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './LoginPage.css';
 import logo from '../../assets/lock_img.gif'
+import LoginService from '../../services/LoginService';
 
 const LoginPage = () => {
   const [username, setUsername] = useState('');
@@ -10,14 +11,22 @@ const LoginPage = () => {
   const [errorMessage, setErrorMessage] = useState('');
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Add your form submission logic here
-    // For example:
     if (username === '' || password === '') {
       setErrorMessage('Please fill in all fields.');
     } else {
-      navigate('/home');
+      try {
+        // Simulating a backend call
+        const result = await LoginService.login(username, password);
+        if (result.success) {
+          navigate('/admin');
+        } else {
+          setErrorMessage(result.error);
+        }
+      } catch (error) {
+        setErrorMessage('An error occurred. Please try again.');
+      }
     }
   };
 

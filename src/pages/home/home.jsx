@@ -7,7 +7,6 @@ import image_four from '../../assets/banner_images/banner_image_3.jpg'; // Chang
 import Header from '../header/header'
 import FooterPage from '../footer/footer';
 
-
 const HomePage = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -74,7 +73,7 @@ const HomePage = () => {
                     </div>
                 </div>
             </div>
-            <FooterPage/>
+            <FooterPage />
         </div>
     );
 };
